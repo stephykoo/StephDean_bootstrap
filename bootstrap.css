@@ -1,0 +1,47 @@
+.col-sm-4 {
+  background-color: lightblue;
+  border: 2px solid black;
+  height: 450px;
+
+}
+h2 {
+font-family: 'VT323', monospace;
+}
+
+.cat {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.container {
+  padding-top: 50px;
+}
+
+.buttons {
+  text-align: center;
+}
+.title {
+  text-align: center;
+  font-family: 'Bangers';
+}
+
+p {
+  font-family: 'Aldrich', sans-serif;
+}
+.carousel-inner {
+  text-align: center;
+}
+.jumbotron {
+  background-image: url("http://www.wallpaperbetter.com/wallpaper/138/178/501/mario-level-yoshi-nintendo-snes-hd-1080P-wallpaper-middle-size.jpg");
+  background-repeat:no-repeat;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+body{
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/back_pic/03/78/55/5057c1660c2a637.jpg")
+}
+a {
+  color: #ffffff;
+  font-weight: bold;
+}
