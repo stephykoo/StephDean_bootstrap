@@ -45,3 +45,176 @@ a {
   color: #ffffff;
   font-weight: bold;
 }
+
+
+
+Last login: Mon Jan 29 11:24:55 on ttys000
+learn12:~ learn$ 
+learn12:~ learn$ cd /Users/learn/Desktop/DeanSteph_1-30 
+learn12:DeanSteph_1-30 learn$ touch bootstrap.css
+learn12:DeanSteph_1-30 learn$ touch bootstrap.html
+learn12:DeanSteph_1-30 learn$ get init
+-bash: get: command not found
+learn12:DeanSteph_1-30 learn$ cd ..
+learn12:Desktop learn$ get init
+-bash: get: command not found
+learn12:Desktop learn$ cd /Users/learn/Desktop/DeanSteph_1-30 
+learn12:DeanSteph_1-30 learn$ git init
+Initialized empty Git repository in /Users/learn/Desktop/DeanSteph_1-30/.git/
+learn12:DeanSteph_1-30 learn$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	bootstrap.css
+	bootstrap.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+learn12:DeanSteph_1-30 learn$ git commit -m "first commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+	bootstrap.css
+	bootstrap.html
+
+nothing added to commit but untracked files present
+learn12:DeanSteph_1-30 learn$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	bootstrap.css
+	bootstrap.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+learn12:DeanSteph_1-30 learn$ git remote add origin https://github.com/FDR1510/DeanSteph_bootstrap.git
+learn12:DeanSteph_1-30 learn$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	bootstrap.css
+	bootstrap.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+learn12:DeanSteph_1-30 learn$ git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+learn12:DeanSteph_1-30 learn$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/FDR1510/DeanSteph_bootstrap.git'
+learn12:DeanSteph_1-30 learn$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	bootstrap.css
+	bootstrap.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+learn12:DeanSteph_1-30 learn$ git add bootstrap.css
+learn12:DeanSteph_1-30 learn$ git add bootstrap.html
+learn12:DeanSteph_1-30 learn$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   bootstrap.css
+	new file:   bootstrap.html
+
+learn12:DeanSteph_1-30 learn$ git commit -m "first commit"
+[master (root-commit) 44fc6f3] first commit
+ Committer: learn <learn@learn12.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 189 insertions(+)
+ create mode 100644 bootstrap.css
+ create mode 100644 bootstrap.html
+learn12:DeanSteph_1-30 learn$ git status
+On branch master
+nothing to commit, working tree clean
+learn12:DeanSteph_1-30 learn$ git push -u origin master
+remote: Permission to FDR1510/DeanSteph_bootstrap.git denied to michaellarocca90.
+fatal: unable to access 'https://github.com/FDR1510/DeanSteph_bootstrap.git/': The requested URL returned error: 403
+learn12:DeanSteph_1-30 learn$ git config --local --unset credential.helper
+learn12:DeanSteph_1-30 learn$ git config --global --unset credential.helper
+learn12:DeanSteph_1-30 learn$ git config --system --unset credential.helper
+learn12:DeanSteph_1-30 learn$ git push -u origin master
+Username for 'https://github.com': FDR1510
+Password for 'https://FDR1510@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 2.68 KiB | 2.68 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/FDR1510/DeanSteph_bootstrap.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+learn12:DeanSteph_1-30 learn$ git remote add origin https://github.com/stephykoo/StephDean_bootstrap.git
+fatal: remote origin already exists.
+learn12:DeanSteph_1-30 learn$ git push -u origin master
+Username for 'https://github.com': stephykoo
+Password for 'https://stephykoo@github.com': 
+remote: Permission to FDR1510/DeanSteph_bootstrap.git denied to stephykoo.
+fatal: unable to access 'https://github.com/FDR1510/DeanSteph_bootstrap.git/': The requested URL returned error: 403
+learn12:DeanSteph_1-30 learn$ git config --local --unset credential.helper
+learn12:DeanSteph_1-30 learn$ git config --global --unset credential.helper
+learn12:DeanSteph_1-30 learn$ git config --system --unset credential.helper
+learn12:DeanSteph_1-30 learn$ git push -u origin master
+Username for 'https://github.com': stephykoo
+Password for 'https://stephykoo@github.com': 
+remote: Permission to FDR1510/DeanSteph_bootstrap.git denied to stephykoo.
+fatal: unable to access 'https://github.com/FDR1510/DeanSteph_bootstrap.git/': The requested URL returned error: 403
+learn12:DeanSteph_1-30 learn$ git remote -v
+origin	https://github.com/FDR1510/DeanSteph_bootstrap.git (fetch)
+origin	https://github.com/FDR1510/DeanSteph_bootstrap.git (push)
+learn12:DeanSteph_1-30 learn$ git remote remove origin
+learn12:DeanSteph_1-30 learn$ git remote add origin https://github.com/stephykoo/StephDean_bootstrap.git
+learn12:DeanSteph_1-30 learn$ git push -u origin master
+Username for 'https://github.com': stephykoo
+Password for 'https://stephykoo@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 2.68 KiB | 2.68 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/stephykoo/StephDean_bootstrap.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+learn12:DeanSteph_1-30 learn$ asdajsdhka
+learn12:DeanSteph_1-30 learn$ 
